@@ -1,0 +1,42 @@
+html {
+    overflow-x: clip;
+
+    --container:300px;
+    --padding-container:10px;
+}
+
+body {
+    font-family: Nunito, sans-serif;
+
+    min-height: 100vh;
+    background: #F9F9F9;
+    color: #000000;
+}
+
+img,svg {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+.container {
+    max-width: calc( var(--container) + var(--padding-container) * 2);
+
+    padding: 0 var(--padding-container);
+    margin: 0 auto;
+}
